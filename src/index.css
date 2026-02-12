@@ -17,15 +17,6 @@ html, body{
             transform: translateX(250%);
         }
     }
-    @keyframes blink{
-        0%, 100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
-    }
-
     .animate-blink {
         animation: blink 0.8s step-end infinite;
     }
@@ -44,3 +35,21 @@ html, body{
     opacity: 1;
     transform: translateY(0);
 }
+
+.dots {
+  margin-left: 4px;
+}
+
+.blink-dot {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
