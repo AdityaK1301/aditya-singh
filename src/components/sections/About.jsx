@@ -104,7 +104,7 @@ export const About = () => {
                                 <div className="border-l-2 border-blue-500/30 pl-4">
                                     <h4 className='font-semibold text-white text-base'>AI Intern</h4>
                                     <p className='text-blue-200 text-sm'>Alexion Techno Pvt. Ltd.</p>
-                                    <p className='text-gray-400 text-xs mt-1'>Sep 2025 - Dec 2025</p>
+                                    <p className='text-gray-400 text-xs mt-1'>Sep 2025 - Nov 2025</p>
                                 </div>
                             </div>
                         </div>
