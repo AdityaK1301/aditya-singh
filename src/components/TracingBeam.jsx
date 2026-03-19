@@ -40,7 +40,7 @@ export const TracingBeam = ({ children, className }) => {
       className={cn("relative mx-auto w-full", className)}
     >
       {/* Beam */}
-      <div className="absolute top-20 left-2 md:left-10">
+      <div className="absolute top-20 left-2 md:left-4 lg:left-6">
         
         {/* Dot */}
         <motion.div
@@ -105,7 +105,12 @@ export const TracingBeam = ({ children, className }) => {
       </div>
 
       {/* Content */}
-      <div ref={contentRef}>{children}</div>
+      <div
+        ref={contentRef}
+        className="pl-8 sm:pl-8 md:pl-16 lg:pl-24"
+        >
+        {children}
+      </div>
     </motion.div>
   );
 };
