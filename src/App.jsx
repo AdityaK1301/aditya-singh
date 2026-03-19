@@ -7,6 +7,7 @@ import {Home} from './components/sections/Home'
 import {About} from './components/sections/About'
 import {Projects} from './components/sections/Projects'
 import {Contact} from './components/sections/Contact'
+import { TracingBeam } from './components/TracingBeam'
 
 function App() {
 
@@ -18,10 +19,14 @@ function App() {
       <div>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <TracingBeam>
+        <div className="flex flex-col">
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
+      </TracingBeam>
       </div>
     </>
   )

@@ -21,7 +21,7 @@ export const Home = () => {
     return (
         <section 
             id="home" 
-            className="min-h-screen flex items-center justify-center relative"
+            className="min-h-screen flex flex-col justify-center py-20"
         >
             <div className="w-full max-w-4xl xl:max-w-5xl mx-auto px-6 md:px-8">
                 <RevealOnScroll>
